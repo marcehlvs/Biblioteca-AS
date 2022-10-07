@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAltaLibro));
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.lblCodigo = new System.Windows.Forms.Label();
             this.btnAceptar = new System.Windows.Forms.Button();
@@ -78,10 +79,10 @@
             this.btnAceptar.FlatAppearance.BorderSize = 0;
             this.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAceptar.ForeColor = System.Drawing.Color.White;
-            this.btnAceptar.Location = new System.Drawing.Point(46, 435);
+            this.btnAceptar.Location = new System.Drawing.Point(174, 433);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(100, 36);
-            this.btnAceptar.TabIndex = 3;
+            this.btnAceptar.TabIndex = 8;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = false;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
@@ -92,10 +93,10 @@
             this.btnCancelar.FlatAppearance.BorderSize = 0;
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.ForeColor = System.Drawing.Color.White;
-            this.btnCancelar.Location = new System.Drawing.Point(236, 435);
+            this.btnCancelar.Location = new System.Drawing.Point(364, 433);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(100, 36);
-            this.btnCancelar.TabIndex = 4;
+            this.btnCancelar.TabIndex = 9;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
@@ -121,7 +122,7 @@
             this.cboCategoria.Location = new System.Drawing.Point(174, 99);
             this.cboCategoria.Name = "cboCategoria";
             this.cboCategoria.Size = new System.Drawing.Size(172, 25);
-            this.cboCategoria.TabIndex = 6;
+            this.cboCategoria.TabIndex = 1;
             // 
             // lblTitulo
             // 
@@ -143,7 +144,7 @@
             this.txtTitulo.Location = new System.Drawing.Point(175, 144);
             this.txtTitulo.Name = "txtTitulo";
             this.txtTitulo.Size = new System.Drawing.Size(172, 25);
-            this.txtTitulo.TabIndex = 8;
+            this.txtTitulo.TabIndex = 2;
             // 
             // lblAutor
             // 
@@ -165,7 +166,7 @@
             this.txtAutor.Location = new System.Drawing.Point(174, 184);
             this.txtAutor.Name = "txtAutor";
             this.txtAutor.Size = new System.Drawing.Size(172, 25);
-            this.txtAutor.TabIndex = 10;
+            this.txtAutor.TabIndex = 3;
             // 
             // lblDescripcion
             // 
@@ -198,7 +199,7 @@
             this.txtUrlTapaLibro.Location = new System.Drawing.Point(176, 279);
             this.txtUrlTapaLibro.Name = "txtUrlTapaLibro";
             this.txtUrlTapaLibro.Size = new System.Drawing.Size(172, 25);
-            this.txtUrlTapaLibro.TabIndex = 14;
+            this.txtUrlTapaLibro.TabIndex = 5;
             this.txtUrlTapaLibro.Leave += new System.EventHandler(this.txtUrlTapaLibro_Leave);
             // 
             // lblFechaPublicacion
@@ -232,13 +233,13 @@
             this.txtDescripcion.Location = new System.Drawing.Point(176, 222);
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(172, 25);
-            this.txtDescripcion.TabIndex = 18;
+            this.txtDescripcion.TabIndex = 4;
             // 
             // pbxAltaTapa
             // 
             this.pbxAltaTapa.Location = new System.Drawing.Point(377, 58);
             this.pbxAltaTapa.Name = "pbxAltaTapa";
-            this.pbxAltaTapa.Size = new System.Drawing.Size(265, 255);
+            this.pbxAltaTapa.Size = new System.Drawing.Size(265, 328);
             this.pbxAltaTapa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxAltaTapa.TabIndex = 19;
             this.pbxAltaTapa.TabStop = false;
@@ -252,7 +253,7 @@
             this.txtStock.Location = new System.Drawing.Point(176, 361);
             this.txtStock.Name = "txtStock";
             this.txtStock.Size = new System.Drawing.Size(172, 25);
-            this.txtStock.TabIndex = 21;
+            this.txtStock.TabIndex = 7;
             this.txtStock.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtStock_KeyPress);
             // 
             // dtpFechaPublicacion
@@ -261,7 +262,7 @@
             this.dtpFechaPublicacion.Location = new System.Drawing.Point(176, 319);
             this.dtpFechaPublicacion.Name = "dtpFechaPublicacion";
             this.dtpFechaPublicacion.Size = new System.Drawing.Size(172, 25);
-            this.dtpFechaPublicacion.TabIndex = 23;
+            this.dtpFechaPublicacion.TabIndex = 6;
             // 
             // frmAltaLibro
             // 
@@ -289,6 +290,7 @@
             this.Controls.Add(this.lblCodigo);
             this.Controls.Add(this.txtCodigo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "frmAltaLibro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

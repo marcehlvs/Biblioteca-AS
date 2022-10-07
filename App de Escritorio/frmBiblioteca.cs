@@ -177,8 +177,15 @@ namespace App_de_Escritorio
             return false;
         }
 
-      
-
-        
+        private void dgvLibros_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Libro objetoSeleccionado;
+            objetoSeleccionado = (Libro)dgvLibros.CurrentRow.DataBoundItem;
+            frmVistaPreliminar libroVisualizado = new frmVistaPreliminar(objetoSeleccionado);
+            libroVisualizado.ShowDialog();
+            cargar();
+            
+            
+        }
     }
 }

@@ -86,7 +86,8 @@
             this.dgvLibros.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvLibros.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvLibros.Size = new System.Drawing.Size(775, 217);
-            this.dgvLibros.TabIndex = 0;
+            this.dgvLibros.TabIndex = 1;
+            this.dgvLibros.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLibros_CellContentDoubleClick);
             this.dgvLibros.SelectionChanged += new System.EventHandler(this.dgvLibros_SelectionChanged);
             // 
             // pbxLibros
@@ -147,7 +148,7 @@
             this.txtFiltroRapido.Location = new System.Drawing.Point(99, 30);
             this.txtFiltroRapido.Name = "txtFiltroRapido";
             this.txtFiltroRapido.Size = new System.Drawing.Size(264, 20);
-            this.txtFiltroRapido.TabIndex = 5;
+            this.txtFiltroRapido.TabIndex = 0;
             this.txtFiltroRapido.TextChanged += new System.EventHandler(this.txtFiltro_TextChanged);
             // 
             // lblFiltro
@@ -172,7 +173,7 @@
             this.btnBuscar.Location = new System.Drawing.Point(682, 390);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(105, 20);
-            this.btnBuscar.TabIndex = 7;
+            this.btnBuscar.TabIndex = 8;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = false;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
@@ -220,7 +221,7 @@
             this.cboCampo.Location = new System.Drawing.Point(65, 391);
             this.cboCampo.Name = "cboCampo";
             this.cboCampo.Size = new System.Drawing.Size(105, 21);
-            this.cboCampo.TabIndex = 11;
+            this.cboCampo.TabIndex = 5;
             this.cboCampo.SelectedIndexChanged += new System.EventHandler(this.cboCampo_SelectedIndexChanged);
             // 
             // cboCriterio
@@ -233,7 +234,7 @@
             this.cboCriterio.Location = new System.Drawing.Point(258, 391);
             this.cboCriterio.Name = "cboCriterio";
             this.cboCriterio.Size = new System.Drawing.Size(105, 21);
-            this.cboCriterio.TabIndex = 12;
+            this.cboCriterio.TabIndex = 6;
             // 
             // txtFiltroAvanzado
             // 
@@ -241,7 +242,7 @@
             this.txtFiltroAvanzado.Location = new System.Drawing.Point(490, 391);
             this.txtFiltroAvanzado.Name = "txtFiltroAvanzado";
             this.txtFiltroAvanzado.Size = new System.Drawing.Size(157, 20);
-            this.txtFiltroAvanzado.TabIndex = 13;
+            this.txtFiltroAvanzado.TabIndex = 7;
             // 
             // frmBiblioteca
             // 
